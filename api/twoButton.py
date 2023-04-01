@@ -37,4 +37,3 @@ def sendTwoButton(receiver, langId, text, tag, title, sessionId):
 
     print(response.text)
 
-# 919820860959
