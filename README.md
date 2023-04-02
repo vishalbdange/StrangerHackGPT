@@ -57,3 +57,9 @@ With this chatbot, students can enrol themselves into programs, explore courses 
 * WhatsApp NUMBER provided by Airtel IQ
 
 ---
+
+## Block Diagram of our System
+
+<img align="center" src="readme-images/block-diagram.png" alt="Block Diagram" width="500px" />
+
+---
