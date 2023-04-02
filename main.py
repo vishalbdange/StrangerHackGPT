@@ -188,6 +188,79 @@ def reply():
             sendTwoButton( request_data['from'], 'en', "Register right now! It will be the best decision for a brighter future! 🌎", ["register", "roam"], ["Register right now!", "Just exploring!"], request_data['sessionId'])
             return ''
 
+    if 'image' in request_data['message']:
+        ngrok = db['config'].find_one({'_id':  'ngrok'})
+        if ngrok['ngrokLink'] == '':
+            sendText(request_data['from'],'en',"Bug 🐛 \n We do not support these types on Render Server!", request_data['sessionId'])
+            return ''
+        else:
+            print('Image detected with ngrok link set')
+            imageToText(request_data['message']['image']['id'], request_data['from'], 'en', request_data['sessionId'])
+
+        return ''
+
+    elif request_data["message"]["type"] == "audio":
+        ngrok = db['config'].find_one({'_id':  'ngrok'})
+        if ngrok['ngrokLink'] == '':
+            sendText(request_data['from'],'en',"Bug 🐛 \n We do not support these types on Render Server!", request_data['sessionId'])
+            return ''
+        else:
+            print('Audio detected with ngrok link set')
+            speechToText(request_data['message']['audio']['id'], request_data['from'], 'en', request_data['sessionId'])
+
+        return ''
+
+    elif request_data["message"]["type"] == "location":
+        R = 6373.0
+
+        lat1 = radians(float(request_data["message"]["location"]["latitude"]))
+        lon1 = radians(float(request_data["message"]["location"]["longitude"]))
+        lat2 = radians(18.9437914)
+        lon2 = radians(72.8224314)
+
+        dlon = lon2 - lon1
+        dlat = lat2 - lat1
+
+        a = sin(dlat / 2)**2 + cos(lat1) * cos(lat2) * sin(dlon / 2)**2
+        c = 2 * atan2(sqrt(a), sqrt(1 - a))
+
+        distance = R * c
+
+        print("Distance Result:", distance)
+        mapToFollow = 'https://www.google.com/maps/dir/'+str(request_data["message"]["location"]["latitude"])+','+str(request_data["message"]["location"]["longitude"])+'/Marine+Lines,+Mumbai,+Maharashtra/@18.9437914,72.8224314,15z/'
+
+        sendText(request_data['from'], 'en', 'Want to visit our office? You still seem far! Currently you are '+str(distance)+' kilometres far! Here is a guide to reach us!🌏', request_data['sessionId'])
+        sendText(request_data['from'], 'en', mapToFollow, request_data['sessionId'])
+        return ''
+
+    elif request_data["message"]["type"] == "text":
+        message_ = request_data['message']['text']['body']
+
+    elif request_data["message"]["type"] == "interactive":
+        if 'list_reply' in request_data['message']['interactive']:
+            message_ = request_data['message']['interactive']['list_reply']['id']
+
+        elif 'button_reply' in request_data['message']['interactive']:
+            message_ = request_data['message']['interactive']['button_reply']['id']
+
+    elif request_data["message"]["type"] == "button":
+        message_ = request_data['message']['button']['payload']
+
+    else:
+        sendText(request_data['from'], 'en', "Sorry! We do not support this message type yet!", request_data['sessionId'])
+        return ''
+
+    message_ = emoji.replace_emoji(message_, replace="")
+
+    if (len(message_) == 0):
+        sendText(request_data['from'], 'en', "🤔😄", request_data['sessionId'])
+        return ''
+
+    # isEmoji = dialogflow_query(message_)
+    # if isEmoji.query_result.intent.display_name == 'Emoji handling - Activity' or isEmoji.query_result.intent.display_name == 'Emoji handling - Animals & Nature' or isEmoji.query_result.intent.display_name == 'Emoji handling - Flags' or isEmoji.query_result.intent.display_name == 'Emoji handling - Food & Drink' or isEmoji.query_result.intent.display_name == 'Emoji handling - Objects' or isEmoji.query_result.intent.display_name == 'Emoji handling - Smileys & People' or isEmoji.query_result.intent.display_name == 'Emoji handling - Symbols' or isEmoji.query_result.intent.display_name == 'Emoji handling - Travel & Places':
+    #     user_ = db['test'].find_one({'_id':  request_data['from']})
+    #     sendText(request_data['from'], user_['langId'], isEmoji.query_result.fulfillment_text, request_data['sessionId'])
+    #     return ''
 
     langId = langid.classify(message_)[0]
     if langId != 'en':
