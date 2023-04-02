@@ -104,3 +104,14 @@ With this chatbot, students can enrol themselves into programs, explore courses 
 <img align="center" src="readme-images/slides/StrangerHacks-30.png" alt="Slides" width="500px" />
 <img align="center" src="readme-images/slides/StrangerHacks-31.png" alt="Slides" width="500px" />
 <img align="center" src="readme-images/slides/StrangerHacks-32.png" alt="Slides" width="500px" />
+
+## Our Team
+<table>
+<tr>
+<td align="center"><a href="https://github.com/Neel-Dandiwala"><kbd><img src="https://avatars3.githubusercontent.com/Neel-Dandiwala?size=400" width="100px;" alt="Neel Dandiwala"/></kbd><br /><sub><b>Neel Dandiwala</b></sub></a><br /></td>
+
+<td align="center"><a href="https://github.com/vishalbdange"><kbd><img src="https://avatars3.githubusercontent.com/vishalbdange?size=400" width="100px;" alt="Vishal Dange"/></kbd><br /><sub><b>Vishal Dange</b></sub></a><br /></td>
+
+<td align="center"><a href="https://github.com/OptimalLearner"><kbd><img src="https://avatars3.githubusercontent.com/OptimalLearner?size=400" width="100px;" alt="Keval Dhanani"/></kbd><br /><sub><b>Keval Dhanani</b></sub></a><br /></td>
+</tr>
+</table>
