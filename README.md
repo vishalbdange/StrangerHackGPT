@@ -63,3 +63,9 @@ With this chatbot, students can enrol themselves into programs, explore courses 
 <img align="center" src="readme-images/block-diagram.png" alt="Block Diagram" width="500px" />
 
 ---
+
+## Flow Diagram of our System
+
+<img align="center" src="readme-images/flow-diagram.png" alt="Implementation Diagram" width="500px" />
+
+---
