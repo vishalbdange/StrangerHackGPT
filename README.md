@@ -69,3 +69,38 @@ With this chatbot, students can enrol themselves into programs, explore courses 
 <img align="center" src="readme-images/flow-diagram.png" alt="Implementation Diagram" width="500px" />
 
 ---
+
+## Slides
+
+<img align="center" src="readme-images/slides/StrangerHacks-01.png" alt="Slides" width="500px" />
+<img align="center" src="readme-images/slides/StrangerHacks-02.png" alt="Slides" width="500px" />
+<img align="center" src="readme-images/slides/StrangerHacks-03.png" alt="Slides" width="500px" />
+<img align="center" src="readme-images/slides/StrangerHacks-04.png" alt="Slides" width="500px" />
+<img align="center" src="readme-images/slides/StrangerHacks-05.png" alt="Slides" width="500px" />
+<img align="center" src="readme-images/slides/StrangerHacks-06.png" alt="Slides" width="500px" />
+<img align="center" src="readme-images/slides/StrangerHacks-07.png" alt="Slides" width="500px" />
+<img align="center" src="readme-images/slides/StrangerHacks-08.png" alt="Slides" width="500px" />
+<img align="center" src="readme-images/slides/StrangerHacks-09.png" alt="Slides" width="500px" />
+<img align="center" src="readme-images/slides/StrangerHacks-10.png" alt="Slides" width="500px" />
+<img align="center" src="readme-images/slides/StrangerHacks-11.png" alt="Slides" width="500px" />
+<img align="center" src="readme-images/slides/StrangerHacks-12.png" alt="Slides" width="500px" />
+<img align="center" src="readme-images/slides/StrangerHacks-13.png" alt="Slides" width="500px" />
+<img align="center" src="readme-images/slides/StrangerHacks-14.png" alt="Slides" width="500px" />
+<img align="center" src="readme-images/slides/StrangerHacks-15.png" alt="Slides" width="500px" />
+<img align="center" src="readme-images/slides/StrangerHacks-16.png" alt="Slides" width="500px" />
+<img align="center" src="readme-images/slides/StrangerHacks-17.png" alt="Slides" width="500px" />
+<img align="center" src="readme-images/slides/StrangerHacks-18.png" alt="Slides" width="500px" />
+<img align="center" src="readme-images/slides/StrangerHacks-19.png" alt="Slides" width="500px" />
+<img align="center" src="readme-images/slides/StrangerHacks-20.png" alt="Slides" width="500px" />
+<img align="center" src="readme-images/slides/StrangerHacks-21.png" alt="Slides" width="500px" />
+<img align="center" src="readme-images/slides/StrangerHacks-22.png" alt="Slides" width="500px" />
+<img align="center" src="readme-images/slides/StrangerHacks-23.png" alt="Slides" width="500px" />
+<img align="center" src="readme-images/slides/StrangerHacks-24.png" alt="Slides" width="500px" />
+<img align="center" src="readme-images/slides/StrangerHacks-25.png" alt="Slides" width="500px" />
+<img align="center" src="readme-images/slides/StrangerHacks-26.png" alt="Slides" width="500px" />
+<img align="center" src="readme-images/slides/StrangerHacks-27.png" alt="Slides" width="500px" />
+<img align="center" src="readme-images/slides/StrangerHacks-28.png" alt="Slides" width="500px" />
+<img align="center" src="readme-images/slides/StrangerHacks-29.png" alt="Slides" width="500px" />
+<img align="center" src="readme-images/slides/StrangerHacks-30.png" alt="Slides" width="500px" />
+<img align="center" src="readme-images/slides/StrangerHacks-31.png" alt="Slides" width="500px" />
+<img align="center" src="readme-images/slides/StrangerHacks-32.png" alt="Slides" width="500px" />
